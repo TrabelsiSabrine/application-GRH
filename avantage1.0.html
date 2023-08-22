@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avantages Sociaux</title>
+  <style>
+    /* Reset default margin and padding */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container for benefits */
+    .benefits-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Styling for each benefit */
+    .benefit {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #a6d2f0;
+      border-radius: 5px;
+    }
+
+    /* Center the heading */
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Style for benefit headings */
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Avantages Sociaux</h1>
+  </header>
+  <section class="benefits-container">
+    <article class="benefit">
+      <h2>Assurance Santé</h2>
+      <p>Consultez les détails de votre assurance santé, y compris la couverture, les prestataires et les procédures de réclamation.</p>
+      <textarea id="healthInsuranceText" rows="4" cols="50" placeholder="Notes sur l'assurance santé..."></textarea>
+      <button onclick="saveHealthInsuranceNotes()">Enregistrer</button>
+    </article>
+    <article class="benefit">
+      <h2>Plan de Retraite</h2>
+      <p>Accédez à des informations sur votre plan de retraite, y compris les options d'investissement, les cotisations de l'employeur et les projections de retraite.</p>
+      <textarea id="retirementPlanText" rows="4" cols="50" placeholder="Notes sur le plan de retraite..."></textarea>
+      <button onclick="saveRetirementPlanNotes()">Enregistrer</button>
+    </article>
+    <article class="benefit">
+      <h2>Jours de Vacances</h2>
+      <p>Vérifiez le solde de vos jours de vacances disponibles et apprenez-en plus sur les politiques de demande de congés.</p>
+      <textarea id="vacationDaysText" rows="4" cols="50" placeholder="Notes sur les jours de vacances..."></textarea>
+      <button onclick="saveVacationDaysNotes()">Enregistrer</button>
+    </article>
+  </section>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bootstrap Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="rh.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Documents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <!-- Jumbotron -->
+   <div class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">Human Resource Documents</h1>
+        <p class="lead">Explore the HR document collection</p>
+    </div>
+</div>
+<style>
+    .equal-image {
+        height: 200px; /* Set a fixed height for the card images */
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .image-container {
+        overflow: hidden;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card" onclick="openForm('CNAM.html')">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGRzXzkv_keoYlosDFWnNwP8A0QrmcATKr-JfF4Fanru7kIAMQ" class="card-img-top img-fluid equal-image" alt="CNAM Document">
+                <div class="card-body">
+                    <h5 class="card-title">Dossier CNAM</h5>
+                    <p class="card-text">Explore CNAM documentation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card" onclick="openForm('CNI.html')">
+                <img src="https://leclaireur.fnac.com/wp-content/uploads/2022/09/shutterstock-2166069807-1256x805.jpg" class="card-img-top img-fluid equal-image" alt="CNI Document">
+                <div class="card-body">
+                    <h5 class="card-title">Changement de CNI</h5>
+                    <p class="card-text">Learn about changing your CNI.</p>
+                </div>
+            </div>
+        </div>
+                   <div class="col-md-3 mb-4">
+                            <div class="card" onclick="openForm('contrat.html')">
+                                <img src="https://st2.depositphotos.com/3591429/12385/i/450/depositphotos_123851266-stock-photo-business-man-working-with-digital.jpg" class="card-img-top img-fluid equal-image" alt="contrat Document">
+                                <div class="card-body">
+                                    <h5 class="card-title">Types de contrat de travail</h5>
+                                    <p class="card-text">Explore Contrat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function openForm(url) {
+                                window.open(url, '_blank');
+                            }
+                        </script>
+                       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+                       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    </body>
+                    </html>
+                    

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Téléchargement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .container h3 {
+      margin-top: 0;
+    }
+    .input-field {
+      margin: 10px 0;
+    }
+    .btn {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Téléchargez votre CV</h3>
+    <form id="soumission" action="traitement-cv.php" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="cvFile" class="form-label">Sélectionnez un fichier PDF ou DOCX :</label>
+        <input type="file" id="cvFile" name="cvFile" accept=".pdf,.doc,.docx" required class="input-field">
+        <div class="error-msg" id="fileError" style="color: red;"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('soumission').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const cvFileInput = document.getElementById('cvFile');
+      const cvFile = cvFileInput.files[0];
+
+      if (!cvFile || !cvFile.name.match(/\.(pdf|doc|docx)$/i)) {
+        document.getElementById('fileError').textContent = "Veuillez sélectionner un fichier PDF ou DOCX.";
+        return;
+      }
+
+      document.getElementById('fileError').textContent = "";
+
+      const emailBody = `Veuillez trouver ci-joint mon CV : ${cvFile.name}`;
+
+      const mailtoLink = `mailto:trabelsisabrouna@gmail.com?subject=Soumission%20de%20CV&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = mailtoLink;
+    });
+  </script>
+</body>
+</html>

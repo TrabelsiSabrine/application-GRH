@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluations de Performance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #a4c9f3;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+        .evaluation {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+        .commentaire {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+        button {
+            background-color: #98d3f2;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Évaluations de Performance</h1>
+    </header>
+        <div class="evaluation">
+
+        </div>
+            <h3>Évaluation: </h3>
+            <textarea id=""
+            <p>Date: </p>
+            <p>Note:</p>
+        </div>
+        <div class="commentaire">
+            <h3>Commentaires pour le manager</h3>
+            <textarea id="employeBComment" rows="4" cols="50" placeholder="Ajoutez vos commentaires pour le manager ici..."></textarea>
+        </div>
+        <button onclick="envoyerCommentaires('employeBComment')">Envoyer les commentaires</button>
+        </div>
+        <script>
+            function envoyerCommentaires(commentId) {
+                const commentTextarea = document.getElementById(commentId);
+                const comment = commentTextarea.value;
+                console.log(`Commentaire pour ${commentId}: ${comment}`);
+                commentTextarea.value = '';
+            }
+        </script>
+    </div>
+</body>
+</html>

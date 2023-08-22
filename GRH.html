@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bootstrap Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Documents1.0.html">Documents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Human Resource</h1>
+            <p class="lead">Include all the services</p>
+        </div>
+    </div>
+    <style>
+        button {
+            cursor: pointer;}
+        .equal-image {
+            height: 200px; /* Set a fixed height for the card images */
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .image-container {
+            overflow: hidden;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" onclick="opensalaryform()">
+                    <img src="https://prismic-io.s3.amazonaws.com/prismic-test-25-02-20/b2abf05f-0dd1-453a-a409-c655905b4831_credit-4516068_1920.jpg" class="card-img-top img-fluid equal-image" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Demande d'avance</h5>
+                        <p class="card-text">Remplir les champs demandés !</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function opensalaryform(){
+                    window.open("avance1.0.html", "_blank");
+                }</script>
+            <div class="col-md-3">
+                <div class="card" onclick="openCongeForm()">
+                    <img src="https://images.prismic.io/cadremploi-edito/51afab5c-7102-4067-bc91-63e9e53097ba_shutterstock_2002803581.jpg?auto=compress,format&rect=0,84,1000,500&w=800&h=400" class="card-img-top img-fluid equal-image" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Demande de congé</h5>
+                        <p class="card-text">Donner les informations nécessaires !</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function openCongeForm() {
+                    window.open("conge_form1.0.html", "_blank");
+                }
+            </script>
+            <div class="col-md-3">
+                <div class="card" onclick="opensoumissionform()">
+                    <img src="https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3Z8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid equal-image" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Soumission de CV</h5>
+                        <p class="card-text">Soumettez votre CV s'il vous plait!</p>
+                    </div>
+                    <script>
+                        function opensoumissionform() {
+                            window.open("soumission1.0.html", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" onclick="opendemissionform()">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRB1qF234BFEASURR9R20MlEGBB4EOnjNWpQ&usqp=CAU" class="card-img-top img-fluid equal-image" alt="Card 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Demande de démission</h5>
+                        <p class="card-text">Préparez une lettre de démission !</p>
+                    </div>
+                    <script>
+                        function opendemissionform() {
+                            window.open("demission1.0.html", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card" onclick="opencertificateform()">
+                    <img src="https://img.freepik.com/psd-premium/vue-maquette-du-certificat-officiel_23-2149568158.jpg" class="card-img-top img-fluid equal-image" alt="Card 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Certificats de travail</h5>
+                        <p class="card-text">Demande de certificats de travail !</p>
+                    </div>
+                    <script>
+                        function opencertificateform() {
+                            window.open("certificat1.0.html", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" onclick="openbenefitsform()">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVtcGxveWVlcyUyMGJlbmVmaXRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid equal-image" alt="Card 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Avantages des employés</h5>
+                        <p class="card-text">consultez vos informations!</p>
+                    </div>
+                    <script>
+                        function openbenefitsform() {
+                            window.open("avantage1.0.html", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" onclick="openonboardingform()">
+                    <img src="https://d11lu0htm9h2oc.cloudfront.net/front/v2/img/blog/bien-integrer-les-salaries.jpg" class="card-img-top img-fluid equal-image" alt="Card 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Processus d'intégration</h5>
+                        <p class="card-text">Remplir le processus d'intégration !</p>
+                    </div>
+                    <script>
+                        function openonboardingform() {
+                            window.open("intégration1.0.html", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" onclick="openevaluationform()">
+                    <img src="https://images.unsplash.com/photo-1544396821-4dd40b938ad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxlcyUyMGRvY3VtZW50cyUyMG4lQzMlQTljZXNzYWlyZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top img-fluid equal-image" alt="Card 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Évaluations de performance</h5>
+                        <p class="card-text">Consultez vos évaluations !</p>
+                    </div>
+                    <script>
+                        function openevaluationform() {
+                            window.open("évaluation1.0.html", "_blank");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

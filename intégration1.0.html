@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processus d'intégration des nouveaux employés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans notre entreprise !</h1>
+    </header>
+    <main>
+        <section id="formulaires-fiscaux">
+            <h2>Formulaire Fiscal</h2>
+            <p>Remplissez le formulaire fiscal ci-dessous :</p>
+            <form id="tax-form" action="/submit-tax-form" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="numero-ssn">Numéro de sécurité sociale :</label>
+                <input type="text" id="numero-ssn" name="numero_ssn" required>
+                <button type="submit" class="btn btn-primary" onclick="envoyerFormulaireFiscal()">Soumettre le formulaire fiscal</button>
+            </form>
+        </section>
+        <section id="contrat-travail">
+            <h2>Contrat de Travail</h2>
+            <p>Lisez attentivement et signez votre contrat de travail :</p>
+            <iframe src="https://assets.wordpress.agendrix.com/uploads/2023/02/7054a928dd2fcf0f6d6b7771c3a4f4172bc20779_screenshot-resource-modele-de-contrat-de-travail.webp" width="100%" height="400"></iframe>
+            <label for="signature">Signature électronique :</label>
+            <input type="text" id="signature" name="signature" required>
+            <button type="button" class="btn btn-primary" onclick="signerContrat()">Signer le contrat</button>
+        </section>
+    </main>
+    <footer>
+        <p>Contactez le service des ressources humaines pour toute assistance!</p>
+    </footer>
+    <script>
+        function envoyerFormulaireFiscal() {
+            const nom = document.getElementById('nom').value;
+            const numeroSsn = document.getElementById('numero-ssn').value;
+            const email = document.getElementById('email').value;
+            const emailBody = `Nom: ${nom}\nNuméro-ssn: ${numeroSsn}`;
+
+            if (email) {
+                if (validateEmail(email)) {
+                    window.location.href =`mailto:$trabelsisabrouna@gmail.com?subject=Demande%20d'intégration&body=${encodeURIComponent(emailBody)}`;
+                } else {
+                    alert("Adresse e-mail non valide !");
+                }
+            } else {
+                alert("Veuillez fournir une adresse e-mail !");
+            }
+        }
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        function signerContrat() {
+            alert("Contrat de travail signé avec succès !");
+        }
+    </script>
+</body>
+</html>

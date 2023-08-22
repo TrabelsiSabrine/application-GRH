@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types de Contrat de Travail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #3498db;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+        }
+        .sub-heading {
+            color: #555;
+            font-size: 22px;
+            margin-top: 20px;}
+        .sidebar {
+            background-color: #f1f1f1;
+            padding: 20px;
+            min-width: 200px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .description {
+            color: #777;
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .feature {
+            margin-bottom: 10px;
+        }
+            .download-button {
+    background-color: #024c63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .section-title {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .contract-details {
+        margin-left: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Types de Contrat de Travail</h1>
+        <p>Découvrez les différents types de contrats de travail disponibles.</p>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Types de Contrats</h2>
+            <ul>
+                <li onclick="showContent('cdi')">Contrat à Durée Indéterminée (CDI)</li>
+                <li onclick="showContent('cdd')">Contrat à Durée Déterminée (CDD)</li>
+                <li onclick="showContent('temporaire')">Contrat de Travail Temporaire</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div id="cdi" class="container">
+                <h2 class="heading">Contrat à Durée Indéterminée (CDI)</h2>
+                <p class="description">Le Contrat à Durée Indéterminée (CDI) est l'une des formes les plus courantes de contrat de travail dans de nombreux pays. Contrairement au Contrat à Durée Déterminée (CDD), qui est signé pour une période spécifique, le CDI est conclu sans limitation de durée. Il offre une relation professionnelle stable entre l'employeur et le salarié.</p>
+            <h3 class="sub-heading">Éléments clés d'un contrat à Durée Indéterminée</h3>
+            <ul class="features-list">
+                <li class="feature">Stabilité de l'emploi : Le CDI garantit une stabilité à long terme pour le salarié, lui offrant un poste de travail permanent au sein de l'entreprise, sauf en cas de résiliation.</li>
+                <li class="feature">Raisons de résiliation : Tant l'employeur que le salarié ont la possibilité de résilier le CDI, sous réserve du respect des préavis et des procédures légales. Les raisons de résiliation peuvent varier, y compris la démission, le licenciement pour motif personnel ou économique.</li>
+                <li class="feature">Tâches et responsabilités : Le contrat doit définir les tâches et les responsabilités du salarié au sein de l'entreprise. Les détails du rôle et des attentes professionnelles sont généralement spécifiés.</li>
+                <li class="feature">Rémunération : Le contrat précise le salaire de base du salarié, ainsi que les modalités de paiement, les avantages sociaux et éventuellement les primes.</li>
+                <li class="feature">Avantages et droits : Les travailleurs en CDI bénéficient généralement d'avantages tels que la sécurité sociale, les congés payés, les formations professionnelles et d'autres droits conformes à la législation du travail.</li>
+                <li class="feature">Protection du salarié : Les travailleurs en CDI bénéficient de protections renforcées contre le licenciement abusif, avec des procédures légales à suivre pour assurer un traitement équitable.</li>
+            </ul> 
+            <p class="description">En résumé, le Contrat à Durée Indéterminée (CDI) offre une relation d'emploi stable, permettant au salarié de bénéficier de droits et d'avantages à long terme tout en contribuant au succès de l'entreprise. Les détails spécifiques d'un CDI peuvent varier en fonction des lois locales et des politiques de l'entreprise.</p>
+            <div class="download-section">
+                <h3 class="sub-heading">Télécharger le Contrat à Durée Déterminée (CDI)</h3>
+                <p class="description">Cliquez pour télécharger le contrat à durée indéterminée :</p>
+                <a class="download-button" href="https://biennaledakar.org/2014/IMG/pdf/contrat-de-travail-duree-indeterminee.pdf">Télécharger le PDF</a>
+            </div></div>
+            <div id="cdd" class="container">
+                <h2 class="heading">Contrat à Durée Déterminée (CDD)</h2>
+                <p class="description">Le Contrat à Durée Déterminée (CDD) est une forme de contrat de travail utilisée dans de nombreux pays, notamment en France. Contrairement au Contrat à Durée Indéterminée (CDI), qui est conclu pour une durée illimitée, le CDD est signé pour une période spécifique et définie à l'avance. Ce type de contrat est généralement utilisé pour répondre à des besoins temporaires, ponctuels ou saisonniers au sein d'une entreprise.</p>
+                <h3 class="sub-heading">Éléments clés d'un Contrat à Durée Déterminée :</h3>
+                <ul class="features-list">
+                <li class="feature">Durée du contrat : Le CDD stipule une date de début et une date de fin précises, déterminant ainsi la période pendant laquelle le contrat est en vigueur. Cette durée peut varier en fonction des besoins de l'entreprise et de la nature du travail à effectuer.</li>
+                <li class="feature">Raison du contrat : Le CDD doit justifier la raison pour laquelle il est utilisé. Il peut s'agir d'un accroissement temporaire d'activité, d'un remplacement de personnel, d'un projet spécifique ou d'une saison particulière.</li>
+                <li class="feature">Tâches et responsabilités : Le contrat doit définir clairement les tâches et les responsabilités du salarié pendant la durée du contrat. Les fonctions à accomplir doivent être précises et conformes à la nature du travail pour lequel le CDD est signé.</li>
+                <li class="feature">Rémunération : Le contrat spécifie le salaire ou la rémunération que le salarié recevra pour son travail. Les modalités de paiement, les avantages sociaux et éventuellement les primes doivent également être mentionnés.</li>
+                <li class="feature">Conditions de renouvellement : Dans certains cas, un CDD peut être renouvelé une fois ou plusieurs fois, dans la limite des règles légales en vigueur. Les conditions et les modalités de renouvellement doivent être définies dans le contrat initial.</li>
+                <li class="feature">Fin du contrat : À l'issue de la période déterminée, le contrat se termine automatiquement sans nécessité de préavis, sauf dispositions contraires spécifiées dans le contrat. Si le CDD n'est pas renouvelé et que le salarié n'est pas embauché en CDI, il peut avoir droit à des indemnités de fin de contrat, conformément à la législation en vigueur.</li>
+                <li class="feature">Protection du salarié : Les travailleurs sous contrat à durée déterminée bénéficient généralement des mêmes droits et protections que ceux en contrat à durée indéterminée, notamment en matière de sécurité sociale, de congés payés et de respect des normes du travail.</li>
+            </ul> 
+            <p class="description">En résumé, le Contrat à Durée Déterminée (CDD) offre une flexibilité aux employeurs pour répondre à des besoins temporaires tout en protégeant les droits et les intérêts des travailleurs temporaires. La réglementation concernant les CDD peut varier d'un pays à l'autre, il est donc important de se référer aux lois locales et aux conventions collectives pour plus de détails.</p>
+            <div class="download-section">
+                <h3 class="sub-heading">Télécharger le Contrat à Durée Déterminée (CDD)</h3>
+                <p class="description">Cliquez pour télécharger le contrat à durée déterminée :</p>
+                <a class="download-button" href="https://itm.public.lu/dam-assets/fr/publications/modele-types/contrat/cdd/cdd.pdf" download="nom_du_fichier.pdf">Télécharger le PDF</a>
+            </div></div>
+            <div id="temporaire" class="container">
+                <h2 class="heading">Contrat Temporaire</h2>
+                <p class="description">Un contrat temporaire est un type de contrat de travail utilisé pour couvrir des besoins spécifiques et temporaires au sein d'une entreprise. Contrairement au Contrat à Durée Indéterminée (CDI), qui est conclu sans limitation de durée, le contrat temporaire est signé pour une période spécifique et limitée dans le temps.</p>
+                <h3 class="sub-heading">Éléments clés d'un Contrat Temporaire :</h3>
+                <ul class="features-list">
+                    <li class="feature">Durée du contrat : Le contrat temporaire stipule une date de début et une date de fin précises, déterminant ainsi la période pendant laquelle le contrat est en vigueur. La durée du contrat peut varier en fonction des besoins de l'entreprise et de la nature du travail à effectuer.</li>
+                    <li class="feature">Raison du contrat : Le contrat temporaire est utilisé pour répondre à des besoins temporaires et spécifiques. Il peut s'agir d'une augmentation ponctuelle d'activité, d'un remplacement de personnel temporaire, de la réalisation d'un projet délimité, ou encore pour faire face à une saison particulière d'activité.</li>
+                    <li class="feature">Tâches et responsabilités : Le contrat détaille les tâches et les responsabilités que le salarié doit accomplir pendant la durée du contrat temporaire. Ces tâches doivent être précises et en lien avec le travail pour lequel le contrat a été conclu.</li>
+                    <li class="feature">Rémunération : Le contrat spécifie la rémunération ou le salaire que le salarié recevra pour son travail pendant la période temporaire. Les modalités de paiement, les avantages sociaux et éventuellement les primes sont également précisés.</li>
+                    <li class="feature">Conditions de renouvellement : Dans certains cas, un contrat temporaire peut être renouvelé une fois ou plusieurs fois, en respectant les limites légales en vigueur. Les conditions et modalités de renouvellement sont généralement énoncées dans le contrat initial.</li>
+                    <li class="feature">Fin du contrat : À l'échéance de la période convenue, le contrat temporaire prend fin automatiquement sans nécessiter de préavis, sauf dispositions contraires mentionnées dans le contrat. Si le contrat n'est pas renouvelé et que le salarié n'est pas embauché en CDI, il peut avoir droit à des indemnités de fin de contrat, conformément à la législation en vigueur.</li>
+                    <li class="feature">Protection du salarié : Les travailleurs sous contrat temporaire bénéficient généralement de droits et de protections similaires à ceux en contrat à durée indéterminée, notamment en ce qui concerne la sécurité sociale, les congés payés et le respect des normes du travail.</li>
+                </ul> 
+                <p class="description">En résumé, le contrat temporaire permet aux employeurs de faire face à des besoins spécifiques et temporaires tout en protégeant les droits et les intérêts des travailleurs temporaires. La réglementation liée aux contrats temporaires peut varier d'un pays à l'autre, il est donc crucial de se référer aux lois locales et aux conventions collectives pour obtenir plus de détails.</p>
+                <div class="download-section">
+                    <h3 class="sub-heading">Télécharger le Contrat temporaire</h3>
+                    <p class="description">Cliquez pour télécharger le contrat temporaire :</p>
+                    <a class="download-button" href="https://www.umoncton.ca/umcm-humaines/sites/umcm-humaines.prod.umoncton.ca/files/wf/contrat_emploi_temporaire.pdf" download="nom_du_fichier.pdf">Télécharger le PDF</a>
+                </div>
+            </div>
+    </div>
+    <script>
+        function hideAllContents() {
+            const allContents = document.querySelectorAll('.main-content > div');
+            for (const content of allContents) {
+                content.style.display = 'none';
+            }
+        }
+        function showContent(contentId) {
+            hideAllContents(); // Masquer tous les contenus d'abord
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+        }
+
+        // Masquer tous les contenus sauf le contenu initial lors du chargement de la page
+        document.addEventListener('DOMContentLoaded', () => {
+            hideAllContents();
+            document.getElementById('cdi').style.display = 'block'; // Montrer le contenu initial
+        });
+    </script>
+</body>
+</html>

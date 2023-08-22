@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de congés</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+        <div class="container">
+         <h3>Demande de congés</h3>
+    <form id="leaveForm">
+        <div class="form-group">
+        <label for="type" class="form-label">Type de congé :</label>
+        <select id="type" name="type" class="form-select" required>
+            <option value="" disabled selected>Choisir le type de congé</option>
+            <option value="maladie">Congé maladie</option>
+            <option value="vacances">Congé vacances</option>
+            <option value="personnel">Congé personnel</option>
+        </select></div>
+        <div class="invalid-feedback">Veuillez sélectionner un type de congé.</div>
+    </div>
+    <div class="form-group">
+        <label for="startDate" class="form-label">Date de début :</label>
+        <input type="date" id="startDate" name="startDate" class="form-control" required>
+        <div class="invalid-feedback">Veuillez saisir la date de début.</div>
+            </div>
+            <div class="form-group">
+             <label for="endDate" class="form-label">Date de fin :</label>
+            <input type="date" id="endDate" name="endDate" class="form-control" required>
+            <div class="invalid-feedback">Veuillez saisir la date de fin.</div>
+            <button type="submit" class="btn btn-primary">Soumettre</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('leaveForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const type = document.getElementById('type').value;
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            const emailBody = `Type de congé: ${type}\nStartDate : ${startDate}\nEndDate : ${endDate} `;
+
+            window.location.href = `mailto:trabelsisabrouna@gmail.com?subject=Demande%20de congé&body=${encodeURIComponent(emailBody)}`;
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
